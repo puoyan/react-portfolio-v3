@@ -2,13 +2,15 @@
 .navbar {
   width: 100%;
   height: 7rem;
-  background-color: $color-primary;
+  background-color: none;
   color: #333;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
+  transition: all 1s ease;
 
   .wrapper {
+    margin-top: 1rem;
     padding: 1rem 3rem;
     display: flex;
     align-items: center;
@@ -26,20 +28,39 @@
     .right {
       .hamburger {
         width: 3.2rem;
-        height: 2.4rem;
+        height: 2.5rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        cursor: pointer;
       }
       span {
         width: 100%;
         height: 3px;
-        background-color: red;
+        background-color: #555;
+        transform-origin: left;
+        transition: all 2s ease;
       }
     }
   }
-}
+  &.active {
+    // background-color: blueviolet;
+    // color: blue;
 
-h1 {
-  font-size: 4rem;
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: #555;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: #333;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,52 @@
+
+.menu {
+  width: 33rem;
+  height: 100vh;
+  // -webkit-backdrop-filter: blur(5px);
+  // backdrop-filter: blur(10px);
+  background-color: #a7b4b488;
+  position: fixed;
+  top: 0;
+  right: -33rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+  text-align: center;
+
+
+  &.active {
+    right: 0;
+  }
+
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #444;
+    width: 60%;
+
+
+
+    li {
+      margin-bottom: 0.5rem;
+      a {
+        font-size: inherit;
+        color: inherit;
+        text-decoration: none;
+      }
+      &:hover {
+        font-weight: 700;
+        
+       
+      
+      
+      }
+    }
+  }
+}
