@@ -5,7 +5,7 @@
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: start;
+  // justify-content: start;
   .hero {
     margin-left: 12rem;
     margin-bottom: 16rem;
@@ -31,7 +31,7 @@
     btn:visited {
       display: inline-block;
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 600;
       padding: 1.2rem 2rem;
       border-radius: 6px;
@@ -48,7 +48,7 @@
       color: #fff;
       margin-right: 1rem;
       margin-top: 1rem;
-      margin-left: -2rem
+      margin-left: -2rem;
     }
 
     .btn--full:hover,
@@ -60,7 +60,6 @@
     .btn--outline:visited {
       background-color: #fff;
       color: #555;
-    
     }
 
     .btn--outline:hover,
@@ -69,7 +68,6 @@
 
       /* border: 3px solid #fff; */
 
-     
       box-shadow: inset 0 0 0 3px $color-tertiary;
     }
   }
