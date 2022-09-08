@@ -1,6 +1,6 @@
 @import "../../global.scss";
 .about {
-  background-color: #dce8ece0;
+  background-image: linear-gradient(to right, #dce8ece0, #86a2ade0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
     padding: 3rem 5rem;
     border-radius: 8px;
     position: relative;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    box-shadow: $shadow;
 
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@
       height: 22rem;
       border-radius: 8px;
       transform: scale(1.1);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+      box-shadow: $shadow;
     }
 
     .text {

@@ -1,3 +1,100 @@
+@import "../../global.scss";
 .skills {
-  background-color: rebeccapurple;
+  background-image: linear-gradient(
+    to right,
+    rgb(251, 250, 224),
+    rgb(217, 216, 201)
+  );
+
+  padding: 4rem;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .container {
+    max-width: 100rem;
+    // background-color: rgb(199, 149, 149);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin: auto;
+
+    .grid-col-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 5rem;
+
+      h4 {
+        font-size: 3rem;
+        grid-column: 1/-1;
+        align-self: center;
+        justify-self: center;
+        padding-left: 0.5rem;
+        color: $text-color-primary;
+        border-bottom: 0.5rem solid $color-primary;
+      }
+      .skill-box {
+        overflow: hidden;
+        box-sizing: border-box;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        min-width: 12rem;
+        max-height: 20rem;
+        padding: 3rem 2rem;
+        background-color: $color-tertiary;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        margin: auto;
+
+        .icon {
+          font-size: 3rem;
+          color: $color-primary;
+        }
+        .title {
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          color: $text-color-primary;
+          font-weight: 600;
+        }
+        .text {
+          font-size: 1.4rem;
+          text-align: center;
+          color: $text-color-secodary;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .grid-col-6 {
+      display: grid;
+      max-width: 120rem;
+      grid-template-columns: repeat(12, 1fr);
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      margin: 0 auto;
+      gap: 2rem;
+      border-radius: 10px;
+      // background: rgb(251, 250, 224);
+      // box-shadow: inset 6px 6px 12px #bababa,
+      //   inset -6px -6px 12px rgb(251, 250, 224);
+      // padding: 2rem;
+
+      img {
+        font-size: 2rem;
+        max-width: 5rem;
+        // background-color: yellow;
+      }
+    }
+  }
 }
