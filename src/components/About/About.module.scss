@@ -1,0 +1,63 @@
+@import "../../global.scss";
+.about {
+  background-image: linear-gradient(to bottom, #ffffffe0, #eee6e6e0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 80rem;
+    height: 30rem;
+    background-image: linear-gradient(to left, #868282e0, #bbc1c188);
+    padding: 3rem 5rem;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: $shadow;
+
+    display: flex;
+    align-items: space-between;
+    border-radius: 18px;
+    background: #e0e0e0;
+    box-shadow: inset 6px 6px 12px #cecece, inset -6px -6px 12px #f2f2f2;
+
+    gap: 8rem;
+    img {
+      height: 22rem;
+      border-radius: 8px;
+      transform: scale(1.6);
+      box-shadow: $shadow;
+    }
+
+    .text {
+      h4 {
+        color: #444;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        border-left: 0.5rem solid $color-primary;
+        padding-left: 0.5rem;
+        display: inline-block;
+        margin-top: 2rem;
+      }
+      p {
+        font-size: 1.4rem;
+        line-height: 1.1;
+        color: #444;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        padding-right: 2;
+      }
+      a,
+      a:link,
+      a:visited {
+        @include btn;
+        background-color: $color-primary;
+        color: #fff;
+        padding: 0.7rem 2rem;
+      }
+      a:hover,
+      a:active {
+        background-color: $color-secondary;
+      }
+    }
+  }
+}

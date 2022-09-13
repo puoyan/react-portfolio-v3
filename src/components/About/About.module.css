@@ -1,0 +1,62 @@
+.about {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8784313725), rgba(240, 242, 245, 0.8784313725));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .container {
+  width: 80rem;
+  height: 30rem;
+  background-color: rgba(219, 238, 238, 0.5333333333);
+  padding: 3rem 5rem;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: space-between;
+  gap: 8rem;
+}
+.about .container img {
+  height: 22rem;
+  border-radius: 8px;
+  transform: scale(1.6);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+.about .container .text h4 {
+  color: #444;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  border-left: 0.5rem solid #f3615e;
+  padding-left: 0.5rem;
+  display: inline-block;
+  margin-top: 2rem;
+}
+.about .container .text p {
+  font-size: 1.4rem;
+  line-height: 1.1;
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  padding-right: 2;
+}
+.about .container .text a,
+.about .container .text a:link,
+.about .container .text a:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.2rem 2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+  background-color: #f3615e;
+  color: #fff;
+  padding: 0.7rem 2rem;
+}
+.about .container .text a:hover,
+.about .container .text a:active {
+  background-color: #db5755;
+}/*# sourceMappingURL=About.module.css.map */

@@ -5,3 +5,23 @@ $color-tertiary: #a7b4b488;
 $text-color-primary: #333;
 $text-color-secodary: #555;
 $shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+
+@mixin btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.2rem 2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+$breakpoint-xs: 320px;
+$breakpoint-sm: 653px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;

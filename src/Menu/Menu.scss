@@ -1,4 +1,4 @@
-
+@import "./../global.scss";
 .menu {
   width: 33rem;
   height: 100vh;
@@ -16,11 +16,9 @@
   transition: all 1s ease;
   text-align: center;
 
-
   &.active {
     right: 0;
   }
-
 
   ul {
     margin: 0;
@@ -31,8 +29,6 @@
     color: #444;
     width: 60%;
 
-
-
     li {
       margin-bottom: 0.5rem;
       a {
@@ -42,10 +38,7 @@
       }
       &:hover {
         font-weight: 700;
-        
-       
-      
-      
+        color: $color-primary;
       }
     }
   }

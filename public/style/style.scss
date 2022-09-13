@@ -1,0 +1,23 @@
+@import "../../global.scss";
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 63.5%;
+}
+
+// @media (max-width: $breakpoint-md) {
+//   html {
+//     font-size: 10%;
+//   }
+// }
+// @media (max-width: $breakpoint-lg) {
+//   html {
+//     font-size: 10%;
+//   }
+// }

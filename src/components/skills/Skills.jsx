@@ -1,10 +1,10 @@
-import "./Skills.scss";
-import { FaCode, FaReact, FaDatabase } from "react-icons/fa";
+import "./Skills.module.scss";
+// import { FaCode, FaReact, FaDatabase } from "react-icons/fa";
 
 export default function Skills() {
   return (
     <div className="skills" id="skills">
-      <div className="container">
+      {/* <div className="container">
         <div className="grid-col-3">
           <h4>Skills </h4>
           <div className="skill-box">
@@ -59,7 +59,7 @@ export default function Skills() {
           <img src="assets/imgs/logos/json.svg" alt="" />
           <img src="assets/imgs/logos/symfony.svg" alt="" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

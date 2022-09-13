@@ -1,0 +1,15 @@
+.app {
+  height: 100%;
+  overflow-x: none;
+}
+.app .sections {
+  width: 100%;
+  background-color: none;
+  position: relative;
+  top: 0;
+  scroll-behavior: smooth;
+}
+.app .sections > * {
+  width: 100vw;
+  height: 100vh;
+}/*# sourceMappingURL=App.css.map */

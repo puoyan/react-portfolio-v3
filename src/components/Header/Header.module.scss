@@ -1,12 +1,12 @@
 @import "../../global.scss";
 .header {
-  background-color: teal;
   background-image: url("../../../public/assets/imgs/career.jpeg");
   background-size: cover;
   display: flex;
   align-items: center;
   // justify-content: start;
   .hero {
+    padding: 3rem;
     margin-left: 12rem;
     margin-bottom: 16rem;
     color: $text-color-primary;
@@ -28,18 +28,8 @@
 
     .btn,
     .btn:link,
-    btn:visited {
-      display: inline-block;
-      text-decoration: none;
-      font-size: 1.5rem;
-      font-weight: 600;
-      padding: 1.2rem 2rem;
-      border-radius: 6px;
-
-      border: none;
-      cursor: pointer;
-      font-family: inherit;
-      transition: all 0.3s;
+    .btn:visited {
+      @include btn;
     }
 
     .btn--full:link,
@@ -69,6 +59,33 @@
       /* border: 3px solid #fff; */
 
       box-shadow: inset 0 0 0 3px $color-tertiary;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .header {
+    background-image: linear-gradient(to bottom, #ebf3f3, #7d8383);
+    .hero {
+      margin: auto auto;
+      padding: 7rem;
+      text-align: center;
+      .btn {
+        text-align: center;
+        .btn,
+        .btn:link,
+        btn:visited {
+          padding: 1.2rem 2rem;
+          margin-top: 1rem;
+        }
+
+        .btn--full:link,
+        .btn--full:visited {
+          margin-right: 1rem;
+          margin-top: 1rem;
+          margin-left: 1rem;
+        }
+      }
     }
   }
 }
