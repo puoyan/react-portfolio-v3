@@ -1,14 +1,16 @@
 .app {
   height: 100%;
   overflow-x: none;
+  box-sizing: border-box;
 
   .sections {
-    width: 100%;
-    // height: calc(100vh - 7rem);
+    max-width: 100%;
+    height: calc(100vh - 7rem);
     background-color: none;
     position: relative;
     top: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
     // scroll-snap-type: y mandatory;
     // scrollbar-width: none;
     // &::-webkit-scrollbar {

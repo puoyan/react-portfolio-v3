@@ -1,5 +1,11 @@
-import "./Works.module.scss";
+import styles from "./Works.module.scss";
 
 export default function Works() {
-  return <div className="works" id="works"></div>;
+  return (
+    <div className={styles.works} id="works">
+      <div className={styles.card}>
+        <div className={styles["img-box"]}></div>
+      </div>
+    </div>
+  );
 }

@@ -1,31 +1,29 @@
 @import "../../global.scss";
 .about {
-  background-image: linear-gradient(to bottom, #ffffffe0, #eee6e6e0);
+  // background-image: linear-gradient(to bottom, #ffffffe0, #eee6e6e0);
+  background-color: rgb(243, 243, 243);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 4rem;
 
   .container {
-    width: 80rem;
+    width: 70rem;
     height: 30rem;
-    background-image: linear-gradient(to left, #868282e0, #bbc1c188);
+    background-color: #fff;
     padding: 3rem 5rem;
-    border-radius: 8px;
+    border-radius: 5px;
     position: relative;
-    box-shadow: $shadow;
-
+    // border: 1px solid $color-primary;
+    // border-top: 10px solid $color-primary;
     display: flex;
     align-items: space-between;
-    border-radius: 18px;
-    background: #e0e0e0;
-    box-shadow: inset 6px 6px 12px #cecece, inset -6px -6px 12px #f2f2f2;
 
-    gap: 8rem;
+    gap: 9rem;
     img {
-      height: 22rem;
-      border-radius: 8px;
-      transform: scale(1.6);
-      box-shadow: $shadow;
+      width: 100%;
+      border-radius: 4px;
+      transform: scale(1.7);
     }
 
     .text {
@@ -57,6 +55,32 @@
       a:hover,
       a:active {
         background-color: $color-secondary;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-sm) {
+  .about {
+    .container {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-image: none;
+      gap: 1rem;
+      height: 67rem;
+      padding: 7rem;
+      margin-top: 10rem;
+      img {
+        max-width: 20rem;
+        margin: 7rem auto;
+      }
+      h4 {
+        border-left: 0.7rem solid $color-primary !important;
+        font-size: 3rem !important;
+      }
+      p {
+        font-size: 1.4rem !important;
       }
     }
   }

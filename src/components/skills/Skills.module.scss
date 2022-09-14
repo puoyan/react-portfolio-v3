@@ -1,19 +1,18 @@
 @import "../../global.scss";
 .skills {
-  background-image: linear-gradient(
-    to right,
-    rgb(251, 250, 224),
-    rgb(217, 216, 201)
-  );
-
-  padding: 4rem;
+  background-color: yellow;
+  background-image: linear-gradient(to right, rgb(243, 243, 243));
+  padding: 2rem;
   box-sizing: border-box;
-  overflow: hidden;
+  // overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .container {
-    max-width: 100rem;
+    max-width: 90rem;
     // background-color: rgb(199, 149, 149);
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +27,7 @@
       margin-bottom: 5rem;
 
       h4 {
-        font-size: 3rem;
+        font-size: 2rem;
         grid-column: 1/-1;
         align-self: center;
         justify-self: center;
@@ -42,7 +41,7 @@
         align-self: center;
         justify-self: center;
         text-align: center;
-        min-width: 12rem;
+        min-width: 18rem;
         max-height: 20rem;
         padding: 3rem 2rem;
         background-color: $color-tertiary;
@@ -77,7 +76,7 @@
 
     .grid-col-6 {
       display: grid;
-      max-width: 120rem;
+      max-width: 50rem;
       grid-template-columns: repeat(12, 1fr);
       justify-content: center;
       align-items: center;
@@ -85,15 +84,45 @@
       margin: 0 auto;
       gap: 2rem;
       border-radius: 10px;
-      // background: rgb(251, 250, 224);
-      // box-shadow: inset 6px 6px 12px #bababa,
-      //   inset -6px -6px 12px rgb(251, 250, 224);
-      // padding: 2rem;
+      // background-color: red;
+      padding: 3rem;
+      z-index: 1;
 
       img {
         font-size: 2rem;
-        max-width: 5rem;
+        max-width: 3rem;
         // background-color: yellow;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .skills {
+    .container {
+      .grid-col-3 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        .skill-box {
+          min-width: 40rem;
+        }
+      }
+      .grid-col-6 {
+        grid-template-columns: repeat(6, 1fr);
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-xs) {
+  .skills {
+    .container {
+      .grid-col-3 {
+        .skill-box {
+          min-width: 30rem;
+        }
+      }
+      .grid-col-6 {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }
