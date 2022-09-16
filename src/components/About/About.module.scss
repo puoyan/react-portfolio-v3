@@ -1,7 +1,7 @@
 @import "../../global.scss";
 .about {
   // background-image: linear-gradient(to bottom, #ffffffe0, #eee6e6e0);
-  background-color: rgb(243, 243, 243);
+  background-color: $color-background-light;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,12 +18,14 @@
     // border-top: 10px solid $color-primary;
     display: flex;
     align-items: space-between;
+    box-shadow: $shadow;
 
     gap: 9rem;
     img {
       width: 100%;
       border-radius: 4px;
       transform: scale(1.7);
+      box-shadow: $shadow;
     }
 
     .text {
@@ -43,6 +45,9 @@
         font-weight: 600;
         margin-bottom: 2rem;
         padding-right: 2;
+      }
+      p:hover {
+        color: $text-color-secodary;
       }
       a,
       a:link,
