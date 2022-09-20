@@ -7,7 +7,7 @@ export default function Works() {
       <div className={styles["grid-col-4"]}>
         <h3>Last Projects</h3>
         <div className={styles.card}>
-          <img src="assets/imgs/career.jpeg" alt="" />
+          <img src="assets/imgs/projects/PortfolioReact.png" alt="" />
           <div className={styles.details}>
             <h4>card no1</h4>
             <p>
@@ -22,7 +22,7 @@ export default function Works() {
         </div>
 
         <div className={styles.card}>
-          <img src="assets/imgs/career.jpeg" alt="" />
+          <img src="assets/imgs/projects/mealPlaner.png" alt="" />
           <div className={styles.details}>
             <h4>card no1</h4>
             <p>
@@ -36,7 +36,7 @@ export default function Works() {
           </div>
         </div>
         <div className={styles.card}>
-          <img src="assets/imgs/career.jpeg" alt="" />
+          <img src="assets/imgs/projects/expensTracker.png" alt="" />
           <div className={styles.details}>
             <h4>card no1</h4>
             <p>
@@ -51,7 +51,7 @@ export default function Works() {
         </div>
 
         <div className={styles.card}>
-          <img src="assets/imgs/career.jpeg" alt="" />
+          <img src="assets/imgs/projects/bubbleSorting.png" alt="" />
           <div className={styles.details}>
             <h4>card no1</h4>
             <p>

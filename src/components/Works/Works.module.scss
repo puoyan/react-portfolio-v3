@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 3rem;
+  padding: 0rem 3rem;
 
   .grid-col-4 {
     max-width: 100%;
@@ -32,12 +32,18 @@
       max-width: 100%;
       border-radius: 10px;
       box-shadow: $shadow;
-      transition: all 0.3s ease-out;
+      transition: all 0.5s ease-out;
       transform: scale(1);
+      min-height: 30rem;
       // padding: 1rem;
       img {
         width: 100%;
         border-radius: 10px 10px 0 0;
+        filter: brightness(0.9);
+        transition: all 1s;
+      }
+      img:hover {
+        filter: brightness(1);
       }
       .details {
         max-width: 100%;
@@ -77,7 +83,7 @@
   }
 }
 
-@media (max-width: $breakpoint-md) {
+@media (max-width: $breakpoint-xl) {
   .works {
     padding: 6rem;
     .grid-col-4 {
@@ -85,90 +91,3 @@
     }
   }
 }
-//   h3 {
-//     font-size: 2rem;
-//     border-left: 3px solid $color-primary;
-//     color: $text-color-primary;
-//     display: inline-block;
-//     margin-top: 1rem;
-//     padding-left: 0.5rem;
-//   }
-
-//   .container {
-//     background-color: red;
-//     position: relative;
-//     max-width: 100%;
-//     max-height: 100%;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     // flex-wrap: wrap;
-//     // padding: 3rem;
-
-//     .card {
-//       position: relative;
-//       max-width: 33%;
-//       height: auto;
-//       background-color: $color-tertiary;
-//       margin: 4rem 1rem;
-//       padding: 0 0 1.5rem;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-between;
-//       align-items: center;
-//       border-radius: 8px;
-//       box-shadow: $shadow;
-
-//       img {
-//         max-width: 100%;
-//         border-radius: 8px 8px 0px 0px;
-//       }
-//       .details {
-//         padding: 0 2rem;
-//         margin-top: 1rem;
-//         h4 {
-//           margin-bottom: 1rem;
-
-//           font-size: 1.8rem;
-
-//           border-bottom: 5px solid $color-primary;
-//           color: $text-color-primary;
-//           display: inline-block;
-//         }
-//         p {
-//           font-size: 1.3rem;
-//           line-height: 1.1;
-//         }
-//
-//         }
-//       }
-//     }
-//   }
-
-//   // .card:hover {
-//   //   height: 42rem;
-//   // }
-// }
-
-// @media (max-width: $breakpoint-sm) {
-//   .works {
-//     .container {
-//       flex-direction: column;
-//       // align-items: center;
-//       justify-content: space-around;
-//       // flex-wrap: wrap;
-//       .card {
-//         max-width: 100%;
-//         max-height: 30%;
-//         margin: 0;
-//         img {
-//           max-width: 100%;
-//           max-height: 60%;
-//         }
-//         .details {
-//           max-width: 55%;
-//         }
-//       }
-//     }
-//   }
-// }

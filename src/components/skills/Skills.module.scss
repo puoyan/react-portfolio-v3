@@ -4,7 +4,6 @@
   background-image: linear-gradient(to right, rgb(243, 243, 243));
   padding: 2rem;
   box-sizing: border-box;
-  // overflow: hidden;
   height: auto !important;
   display: flex;
   justify-content: center;
@@ -12,8 +11,6 @@
 
   .container {
     max-width: 90rem;
-    // background-color: rgb(199, 149, 149);
-    // overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,6 +41,7 @@
         text-align: center;
         min-width: 18rem;
         max-height: 20rem;
+        min-height: 20rem;
         padding: 3rem 2rem;
         background-color: $color-tertiary;
         color: #333;

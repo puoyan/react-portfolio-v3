@@ -1,3 +1,19 @@
+@import "../../global.scss";
 .footer {
-  background-color: wheat;
+  background-color: #00000088;
+  height: auto !important;
+  text-align: center;
+
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    padding: 2rem;
+
+    a {
+      margin-left: 1rem;
+    }
+  }
 }

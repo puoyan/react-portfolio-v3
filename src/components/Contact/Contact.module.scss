@@ -1,3 +1,100 @@
+@import "../../global.scss";
 .contact {
-  background-color: yellowgreen;
+  background-color: $color-tertiary;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto !important;
+  padding: 20rem 2rem;
+  max-width: 100%;
+  .container {
+    background-color: $color-tertiary;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 70%;
+    border-radius: 15px;
+    padding: 4rem;
+    gap: 3rem;
+    box-shadow: $shadow;
+    box-sizing: border-box;
+    .contactDetails {
+      max-width: 100%;
+      font-size: 4rem;
+      .icon {
+        color: $color-primary;
+        font-size: 5rem;
+      }
+      h4 {
+        font-size: 3rem;
+      }
+      h5 {
+        font-size: 2.6rem;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+    }
+    form {
+      min-width: 100%;
+      justify-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: flex-start;
+      // width: 100%;
+      border-radius: 10px;
+      border: none;
+      ::placeholder {
+        color: $text-color-form;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        margin: rem;
+        height: 4rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        font-size: 2rem;
+        padding-left: 2rem;
+        outline: none !important;
+        border-color: transparent;
+      }
+      textarea {
+        height: 10rem;
+        padding: 1.4rem;
+      }
+      input:focus,
+      textarea:focus {
+        background-color: $color-background-light;
+        outline: none !important;
+        border: 1px solid $color-tertiary;
+        box-shadow: none;
+      }
+
+      input[type="submit"] {
+        background-color: $color-primary !important;
+        color: #fff;
+
+        @include btn;
+        max-width: fit-content;
+        align-self: flex-start;
+        margin-top: 1rem;
+      }
+      input[type="submit"]:hover {
+        background-color: $color-secondary;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-xl) {
+  .contact {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
 }
