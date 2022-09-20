@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto !important;
+  height: calc(100vh-2rem);
   padding: 20rem 2rem;
   max-width: 100%;
   .container {
@@ -16,7 +16,7 @@
     align-items: center;
     max-width: 70%;
     border-radius: 15px;
-    padding: 4rem;
+    padding: 5rem;
     gap: 3rem;
     box-shadow: $shadow;
     box-sizing: border-box;
@@ -63,6 +63,7 @@
         padding-left: 2rem;
         outline: none !important;
         border-color: transparent;
+        resize: none;
       }
       textarea {
         height: 10rem;

@@ -9,6 +9,13 @@ $text-color-secodary: #555;
 $text-color-form: rgb(200, 192, 192);
 $shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
 
+$breakpoint-xs: 320px;
+$breakpoint-sm: 653px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
 @mixin btn {
   display: inline-block;
   text-decoration: none;
@@ -21,10 +28,3 @@ $shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
   font-family: inherit;
   transition: all 0.3s;
 }
-
-$breakpoint-xs: 320px;
-$breakpoint-sm: 653px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-$breakpoint-xxl: 1400px;

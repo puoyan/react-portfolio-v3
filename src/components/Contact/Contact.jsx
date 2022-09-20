@@ -1,14 +1,23 @@
 import styles from "./Contact.module.scss";
 
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
 import { GoMail } from "react-icons/go";
 import { useRef } from "react";
 
 export default function Contact() {
   const form = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [text, setText] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setName("");
+    setEmail("");
+    setSubject("");
+    setText("");
 
     emailjs
       .sendForm(
@@ -49,6 +58,8 @@ export default function Contact() {
             name="name"
             id="name"
             placeholder="Your Name*"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
             required
           />
           {/* <label>Email</label> */}
@@ -57,6 +68,8 @@ export default function Contact() {
             name="email"
             id="email"
             placeholder="Your Email*"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
             required
           />
           {/* <label>Email</label> */}
@@ -65,6 +78,8 @@ export default function Contact() {
             name="subject"
             id="subject"
             placeholder="Subject*"
+            value={subject}
+            onChange={(event) => setSubject(event.target.value)}
             required
           />
           {/* <label>Message</label> */}
@@ -73,6 +88,8 @@ export default function Contact() {
             rows="10"
             cols="33"
             placeholder="Please type your message here*"
+            value={text}
+            onChange={(event) => setText(event.target.value)}
             required
           />
           <input type="submit" value="Send Message" />

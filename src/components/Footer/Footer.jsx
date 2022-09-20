@@ -1,5 +1,4 @@
 import styles from "./Footer.module.scss";
-import { GrLinkedin } from "react-icons/gr";
 
 export default function Footer() {
   return (
