@@ -1,5 +1,4 @@
 import styles from "./Contact.module.scss";
-
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { GoMail } from "react-icons/go";

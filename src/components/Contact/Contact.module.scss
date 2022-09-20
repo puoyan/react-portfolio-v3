@@ -1,7 +1,6 @@
 @import "../../global.scss";
 .contact {
   background-color: $color-tertiary;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,6 +93,7 @@
 }
 @media (max-width: $breakpoint-xl) {
   .contact {
+    height: auto !important;
     .container {
       grid-template-columns: 1fr;
     }

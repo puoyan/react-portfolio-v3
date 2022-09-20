@@ -9,13 +9,16 @@ export default function Works() {
         <div className={styles.card}>
           <img src="assets/imgs/projects/PortfolioReact.png" alt="" />
           <div className={styles.details}>
-            <h4>card no1</h4>
+            <h4>React Portfolio</h4>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-              sed sequi explicabo, dicta nesciunt adipisci est atque molestias
-              facilis consequatur! Ad,
+              had fun using the tools i learned to create this portfolio( React/
+              Sass / responsive design)
             </p>
-            <a href="#contact">
+            <a
+              href="https://github.com/puoyan/react-portfolio-v3"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub />
             </a>
           </div>
@@ -24,13 +27,16 @@ export default function Works() {
         <div className={styles.card}>
           <img src="assets/imgs/projects/mealPlaner.png" alt="" />
           <div className={styles.details}>
-            <h4>card no1</h4>
+            <h4>PHP/Symfony - Meal Planer(class Project/Team Work)</h4>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-              sed sequi explicabo, dicta nesciunt adipisci est atque molestias
-              facilis consequatur! Ad,
+              Team of 5 we used: Trello Bord in scrum style and Mindmap to
+              organize our work, daily Zoom Meetings kept us up to date.
             </p>
-            <a href="#contact">
+            <a
+              href="https://github.com/markotomic93/Team-3-MealPlanner-Project"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub />
             </a>
           </div>
@@ -38,13 +44,16 @@ export default function Works() {
         <div className={styles.card}>
           <img src="assets/imgs/projects/expensTracker.png" alt="" />
           <div className={styles.details}>
-            <h4>card no1</h4>
+            <h4>React-Expense Tracker</h4>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-              sed sequi explicabo, dicta nesciunt adipisci est atque molestias
-              facilis consequatur! Ad,
+              React/Expense Tracker user can add Expense and filter the Expenses
+              with Visual Chart
             </p>
-            <a href="#contact">
+            <a
+              href="https://github.com/puoyan/expense_tracker"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub />
             </a>
           </div>
@@ -53,13 +62,16 @@ export default function Works() {
         <div className={styles.card}>
           <img src="assets/imgs/projects/bubbleSorting.png" alt="" />
           <div className={styles.details}>
-            <h4>card no1</h4>
+            <h4>React/bubble sort visualization</h4>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-              sed sequi explicabo, dicta nesciunt adipisci est atque molestias
-              facilis consequatur! Ad,
+              generate the new Array with random numbers,and visualizie them on
+              DOM
             </p>
-            <a href="#contact">
+            <a
+              href="https://github.com/puoyan/Bubble_Sorting_React"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub />
             </a>
           </div>

@@ -17,7 +17,7 @@ html {
 }
 @media (min-width: 1400px) and (max-width: 2256px) {
   html {
-    font-size: 70%;
+    font-size: 90%;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -33,7 +33,7 @@ html {
 
 @media (min-width: 768px) and (max-width: 992px) {
   html {
-    font-size: 60%;
+    font-size: 62%;
   }
 }
 @media (min-width: 660px) and (max-width: 768px) {
